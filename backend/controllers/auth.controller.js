@@ -63,7 +63,7 @@ export const login = async(req, res) => {
 
         if (!user || !isPasswordCorrect)
         {
-           return res.statues(400).json({error:"Internal Server Error"}) 
+           return res.status(400).json({error:"Internal Server Error"}) 
         }
 
         generateTokenAndSetCookie(user._id, res);
