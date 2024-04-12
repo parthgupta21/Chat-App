@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const login = () => {
     return (
         <div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
@@ -11,29 +13,29 @@ export const login = () => {
                 <form >
                     <div>
                         <label className='label p-2'>
-                            <span className='text-base label-text'>Username</span>
+                            <span className='text-base label-text text-white'>Username</span>
                         </label>
                         <input
                             type='text'
                             placeholder='Enter username'
-                            className='w-full input input-bordered h-10 bg-black bg-opacity-50 text-white'
+                            className='w-full input input-bordered h-10 bg-black  text-white'
                         />
                     </div>
 
                     <div>
                         <label className='label p-2'>
-                            <span className='text-base label-text'>Password</span>
+                            <span className='text-base label-text text-white'>Password</span>
                         </label>
                         <input
                             type='text'
                             placeholder='Enter Password'
-                            className='w-full input input-bordered h-10 bg-black bg-opacity-50 text-white'
+                            className='w-full input input-bordered h-10 bg-black  text-white'
                         />
                     </div>
-                    <a href='#' className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'>
+                    <Link to='/signup' className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block text-white'>
                         {"Don't"} have an account?
-                    </a>
-                    <button className='btn btn-block btn-sm mt-2 bg-black'>
+                    </Link>
+                    <button className='btn btn-block btn-sm mt-2 bg-blue-500 text-white border border-blue-700'>
                         Login
                     </button>
                 </form>
